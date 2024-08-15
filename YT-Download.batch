@@ -1,5 +1,5 @@
 @echo off
 cd "C:\[PATH FILE]\yt-dlp"
 set /p input= Paste YT URL: 
-set /p title= "Enter Title (No spaces): "
+set /p title= "Enter Title (Spaces will be removed): "
 cmd /k "yt-dlp -o %USERPROFILE%\downloads\%title: =% -S res,vcodec:h264,acodec:m4a --no-mtime %input: =%"
